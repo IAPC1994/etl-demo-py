@@ -4,22 +4,22 @@
 
 # ETL Demo: From API -> DataFrame -> Parquet
 
-This basic example of a ETL pipeline using Python
+This basic example of an ETL pipeline using Python
 
-### How it works?
+### 🔄 How it works?
 
 1. We **Extract** JSON data from an public API (`jsonplaceholder`)
-2. It is transformed:
-   - Key Fields selecction
-   - Columns renamed
-   - Email format standarized
-3. Upload on Parquet file
+2. **Transform**:
+   - Key Fields are selected.
+   - Columns are renamed.
+   - Email addresses are standardized (lowercased).
+3. **Load**: The cleaned data is saved to a Parquet file.
 
-### Run commands:
+### 🧪 How to run it:
 
 1. Clone the repository
-2. Navigate to the cloned project by CMD.
-3. Create the virtual environment:
+2. Navigate into the project directory.
+3. Create a virtual environment:
 
 ```
 python -m venv venv
@@ -31,7 +31,7 @@ python -m venv venv
 venv\Scripts\activate
 ```
 
-5. Install all the dependencies:
+5. Install dependencies:
 
 ```
 pip install -r requirements.txt
@@ -42,3 +42,12 @@ pip install -r requirements.txt
 ```
 python src/main.py
 ```
+
+### Output
+
+A file named users.parquet will be created in the output/ directory.
+
+### Requirements:
+
+- Python 3.8+
+- pandas, requests, pyarrow
