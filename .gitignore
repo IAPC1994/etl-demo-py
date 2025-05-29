@@ -1,0 +1,31 @@
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Python files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Output files
+output/
+*.parquet
+
+# Temp files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE's Configuration files
+.vscode/
+.idea/
+*.code-workspace
